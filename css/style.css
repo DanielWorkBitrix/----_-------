@@ -290,15 +290,19 @@ header {
     width: 100vw;
     background: #F1F1F3;
     position: relative;
-    padding-bottom: 96px;
 }
 
 .subtitle-line {
     margin-bottom: 90px;
 }
 
-.stages_text-content {
+.stages-vnedr .container { 
+    padding-bottom: 96px;
     padding-top: 120px;
+}
+
+.stages {
+    width: 80%;
 }
 
 .stage {
@@ -307,6 +311,7 @@ header {
     gap: 19px;
     width: 686px;
     height: 150px;
+    text-align: left;
 }
 
 .stage-num {
@@ -335,6 +340,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 75%;
 }
 
 .stage-content h3 {
@@ -493,9 +499,13 @@ header {
     margin-bottom: 90px;
 }
 
-.posibilities {
+.posibilities .container {
     position: relative;
     padding: 119px 0;
+}
+
+.posibilities {
+    position: relative;
 }
 
 .posibilities_ornament_1 {
@@ -1035,14 +1045,11 @@ footer .container {
         font-size: 16px;
         line-height: 24px;
     }
-     .stages-vnedr {
+     .stages-vnedr .container {
         text-align: left;
         padding-bottom: 450px;
-    } 
-    .stages_text-content {
-        text-align: left;
         padding-top: 60px;
-    }
+    } 
     .stages_back {
         top: 65%;
     }
@@ -1135,7 +1142,7 @@ footer .container {
     }
     .solution-text {
         text-align: left;
-        width: 361px;
+        width: 50%;
     }
     .solution-text p {
         font-size: 16px;
@@ -1413,12 +1420,19 @@ footer .container {
         top: 68%;
         right: 0px;
     }
+    .stages-vnedr .container {
+        padding-bottom: 80%;
+    }
+    .subtitle-line {
+        margin-bottom: 30px;
+    }
     .stage {
         display: flex;
         flex-direction: row;
-        gap: 19px;
+        gap: 10px;
         width: 100%;
         height: auto;
+        margin-bottom: 10%;
     }
     .stage-num {
         width: 50px;
@@ -1427,4 +1441,204 @@ footer .container {
     .stage-num p {
         font-size: 20px;
     }
+    .stage-content {
+        gap: 5px;
+        width: 80%;
+    }
+    .stage-content h3 {
+        width: 101%;
+        font-size: 16px;
+        line-height: 34px;
+    }
+    .stage-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .stages_back img {
+        width: 238px;
+        height: 232px;
+    }
+    .stages_back {
+        top: 75%;
+        right: 25%;
+    }
+    .processes {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .process-block {
+        width: 301px;
+    }
+    .process-block_content {
+        margin: 40px 33px 0 34px;
+    }
+    .process_ornament_1 {
+        top: 79%;
+        right: 78%;
+    }
+    .process_ornament_2 {
+        bottom: 88%;
+        left: -10%;
+    }
+    .process_ornament_3 {
+        bottom: 1%;
+        right: -100%;
+    }
+    .solutions .container {
+        padding-top: 40px;
+        padding-bottom: 80%;
+    }
+    .solution-block {
+        width: 40%;
+        margin-bottom: 50px;
+    }
+    .solution-text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .solution-back {
+        right: 0px;
+        bottom: 0px;
+        width: 360px;
+        height: 262px;
+    }
+    .posibilities .container {
+        padding: 40px 0;
+    }
+    .posibilities .title {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .posibilities .subtitle-line {
+        margin-bottom: 40px;
+    }
+    .posibilities-block .block-title {
+        font-size: 18px;
+    }
+    .posibilities_ornament_1 {
+        bottom: 0%;
+        right: -40%;
+    }
+    .mobileCRM .container {
+        padding: 40px 0 40px 0;
+    }
+    .mobileCRM_blocks {
+        margin-top: 95%;
+    }
+    .mobileCRM_block {
+        width: 100%;
+    }
+    .mobileCRM-back {
+        top: 15%;
+        right: 15%;
+        width: 257px;
+        height: 268px;
+    }
+    .mobileCRM_block .block-title {
+        width: 100%;
+        font-size: 18px;
+    }
+    .advantages .container {
+        padding: 40px 0 40px 0;
+    }
+    .advantages .subtitle-line {
+        margin-bottom: 40px;
+    }
+    .advantages_block {
+        padding-left: 20%;
+    }
+    .advantages_blocks {
+        gap: 30px;
+    }
+    .advantages_block img {
+        width: 50px;
+        height: 50px;
+    }
+    .advantages_block .block-title {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 15px;
+        line-height: 24px;
+    }
+    .advantages_ornament_2 {
+        top: 10%;
+        right: -15%;
+    }
+    .advantages_ornament_1 {
+        top: 27%;
+        left: -25%;
+    }
+    .advantages_ornament_3 {
+        bottom: -35%;
+        right: -90%;
+    }
+    .bitrix .container {
+        padding: 40px 0 40px 0;
+    }
+    .bitrix_text {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .contacts .container {
+        padding: 60px 0 60px 0;
+        gap: 40px;
+        text-align: left;
+    }
+    .contacts_inform {
+        height: 80%;
+    }
+    .contact_block-text {
+        font-size: 14px;
+    }
+    .contact_blocks {
+        gap: 15px;
+    }
+    .feedback_block {
+        width: 100%;
+    }
+    .feedback_block-content {
+        padding: 50px 25px 30px 25px;
+        width: 85%;
+    }
+    .feedback_block-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .feedback_block-text {
+        width: 100%;
+    }
+    .feedback_input-block {
+        width: 58%;
+        height: 40px;
+    }
+    .feedback_checkbox-block {
+        width: 100%;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .feedback_btn {
+        width: 100%;
+        height: 49px;
+        border-radius: 5px;
+    }
+    .contacts-back {
+        top: 65%;
+        left: -80%;
+        width: 854px;
+        height: 382px;
+    }
+    .contacts-number {
+        font-size: 16px;
+    }
+    .contacts-mail {
+        font-size: 12px;
+    }
+    .footer_up-block img {
+        width: 106px;
+        height: 36px;
+    }
 }
+
