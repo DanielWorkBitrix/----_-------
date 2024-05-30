@@ -23,6 +23,7 @@
 .container {
     width: 1440px;
     margin: 0 auto;
+    text-align: left !important;
 }
 
 body {
@@ -36,24 +37,21 @@ footer {
     overflow: hidden;
 }
 
-header {
-z-index: 99;
-}
-
 main {
 z-index: 1;
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     padding-top: 20px;
     padding-bottom: 20px;
     background: #FFF;
+    z-index: 99;
 }
 
 .container {
-    width: 1140px;
+    width: 1440px;
     margin: 0 auto;
     text-align: center;
 }
@@ -156,6 +154,7 @@ header {
     height: 451px;
     z-index: 2;
     margin-bottom: 224px;
+    text-align: left;
 }
 
 .main_title {
@@ -287,7 +286,7 @@ header {
 }
 
 .stages-vnedr {
-    width: 100vw;
+    width: 100%;
     background: #F1F1F3;
     position: relative;
 }
@@ -449,7 +448,7 @@ header {
 }
 
 .solutions {
-    width: 100vw;
+    width: 100%;
     position: relative;
     background: #F1F1F3;
 }
@@ -542,7 +541,7 @@ header {
 }
 
 .posibilities .title {
-    width: 507px;
+    width: 50%;
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -588,7 +587,7 @@ header {
 }
 
 .mobileCRM {
-    width: 100vw;
+    width: 100%;
     position: relative;
     background: #F1F1F3;
 }
@@ -772,8 +771,10 @@ header {
     padding: 100px 0 130px 0;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 230px;
+    flex-wrap: nowrap;
+    gap: 0%;
+    /* justify-content: space-between; */
+    /* gap: 230px; */
 }
 
 .contact_blocks {
@@ -791,7 +792,7 @@ header {
 }
 
 .contacts_inform {
-    width: 100%;
+    width: 50%;
 }
 
 .icon_contact {
@@ -1096,23 +1097,32 @@ footer .container {
         font-size: 16px;
         margin-bottom: 28px;
     }
-    .process_ornament_3 {
-        bottom: 1%;
+    .process_ornament_3,
+    .process_ornament_1,
+    .process_ornament_2,
+    .posibilities_ornament_1,
+    .posibilities_ornament_2,
+    .posibilities_ornament_3,
+    .advantages_ornament_1,
+    .advantages_ornament_2,
+    .advantages_ornament_3 {
+        /* bottom: 1%;
         right: -28%;
         width: 560px;
         height: 560px;
         border-radius: 560px;
         border: 120px solid #F8F9FF;
-        z-index: -1;
+        z-index: -1; */
+        display: none;
     }
-    .process_ornament_1 {
+    /* .process_ornament_1 {
         top: 75%;
         right: 78%;
     }
     .process_ornament_2 {
         bottom: 55%;
         left: 0%;
-    }
+    } */
     .solutions .container {
         display: flex;
         flex-direction: column;
@@ -1123,6 +1133,7 @@ footer .container {
     .solution-blocks {
         width: 100%;
         gap: 10%;
+        text-align: center;
     }
     .solution-block {
         width: 180px;
@@ -1165,7 +1176,7 @@ footer .container {
         display: flex;
         margin-left: 0;
     }
-    .posibilities_ornament_3 {
+    /* .posibilities_ornament_3 {
         top: 17%;
     }
     .posibilities_ornament_2 {
@@ -1174,7 +1185,7 @@ footer .container {
     .posibilities_ornament_1 {
         bottom: 34%;
         right: 0;
-    }
+    } */
     .mobileCRM .container {
         padding: 60px 0 60px 0;
         text-align: left;
@@ -1223,7 +1234,7 @@ footer .container {
         width: 57px;
         height: 57px;
     }
-    .advantages_ornament_3 {
+    /* .advantages_ornament_3 {
         bottom: -45%;
         right: -40%;
         width: 560px;
@@ -1239,7 +1250,7 @@ footer .container {
     .advantages_ornament_1 {
         top: 40%;
         left: -15%;
-    }
+    } */
     .bitrix .container {
         text-align: left;
     }
@@ -1251,11 +1262,12 @@ footer .container {
         padding: 60px 0 60px 0;
         gap: 60px;
         text-align: left;
+        flex-wrap: wrap;
     }
     .contact_blocks {
-        width: 80%;
+        width: 100%;
         flex-wrap: wrap;
-        height: 50%;
+        height: 63%;
     }
     .contacts_inform {
         height: 300px;
@@ -1378,6 +1390,9 @@ footer .container {
     }
     .main_green-back {
         top: 0;
+    }
+    .block-subtitle {
+        font-size: 13px;
     }
     .main_green-back img {
         width: 1004px;
@@ -1535,7 +1550,7 @@ footer .container {
         width: 257px;
         height: 268px;
     }
-    .mobileCRM_block .block-title {
+    .block-title {
         width: 100%;
         font-size: 18px;
     }
@@ -1585,14 +1600,17 @@ footer .container {
         padding: 60px 0 60px 0;
         gap: 40px;
         text-align: left;
+        flex-wrap: wrap;
     }
     .contacts_inform {
-        height: 80%;
+        height: 100%;
     }
     .contact_block-text {
         font-size: 14px;
+        width: 100%;
     }
     .contact_blocks {
+        width: 180%;
         gap: 15px;
     }
     .feedback_block {
@@ -1639,6 +1657,11 @@ footer .container {
     .footer_up-block img {
         width: 106px;
         height: 36px;
+    }
+    .checkbox-text {
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 14px;
     }
 }
 

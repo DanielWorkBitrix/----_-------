@@ -23,7 +23,6 @@ menu_btn.addEventListener('click', () => {
 		}
 		menu_btn.classList.remove('is-active');
 
-
 	} else {
 		menu_btn.classList.add('is-active');
 		ul.style.top = '80px';
